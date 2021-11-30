@@ -1,0 +1,42 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "document_type" : "Cedula de ciudadania1",
+    "identification_document" : "10706026441",
+    "names" : "Diego Fernando1",
+    "surnames" : "Rodriguez Ramirez1",
+    "direction" : "mz 27 casa 131",
+    "email" : "diego.rodriguez9003@gmail.com1",
+    "landline" : "83315641",
+    "cell_phone" : "31154115791",
+    "link_to_website" : "https://misiontic.ucaldas.edu.co/1",
+    "profile_description" : "Persona honesta y responsable1"
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/61a5a8cbfea6d6daca962007 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/61a5a8cbfea6d6daca962007 HTTP/1.1
+Content-Type: application/json
+
+{
+    "document_type" : "Cedula de ciudadania",
+    "identification_document" : "1070602644",
+    "names" : "Diego Fernando",
+    "surnames" : "Rodriguez Ramirez",
+    "direction" : "Mz 27 - casa 13",
+    "email" : "diego.rodriguez9003@gmail.com",
+    "landline" : "8331564",
+    "cell_phone" : "3115411579",
+    "link_to_website" : "https://misiontic.ucaldas.edu.co/",
+    "profile_description" : "Persona honesta y responsable"
+}
+
+###
+DELETE http://localhost:3000/api/users/61a5a8cbfea6d6daca962007 HTTP/1.1
